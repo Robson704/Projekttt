@@ -4,7 +4,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
-	"github.com/[username/repository-name]/pkg/logger"
+	"github.com/Robson704/Projekttt/pkg/logger"
 )
 
 // ItemCount returns the number of items in your table.
