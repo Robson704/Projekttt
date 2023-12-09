@@ -16,8 +16,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
 	"github.com/aws/aws-sdk-go/service/dynamodb/expression"
-	"github.com/[username/repository-name]/pkg/api"
-	"github.com/[username/repository-name]/pkg/logger"
+	"github.com/Robson704/Projekttt/pkg/api"
+	"github.com/Robson704/Projekttt/pkg/logger"
 )
 
 // User contains the client account information
