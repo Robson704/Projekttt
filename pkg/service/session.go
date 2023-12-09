@@ -3,7 +3,7 @@ package service
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/[username/repository-name]/pkg/logger"
+	"github.com/Robson704/Projekttt/pkg/logger"
 )
 
 var sess *session.Session
