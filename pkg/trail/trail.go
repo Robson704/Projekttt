@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/[username/repository-name]/pkg/response"
+	"github.com/Robson704/Projekttt/pkg/response"
 )
 
 type Trail struct {
