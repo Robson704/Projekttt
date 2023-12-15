@@ -39,7 +39,7 @@ var statusMap = map[int]string{
 type Task struct {
 	TaskID      string `json:"id" dynamodbav:"id"`
 	UserID      string `json:"user_id" dynamodbav:"user_id"`
-	Tytul       string `json:"tytul" dynamodbav:"tytul"`
+	Tytul       string `json:"title" dynamodbav:"title"`
 	Description string `json:"description" dynamodbav:"description"`
 	Status      string `json:"status" dynamodbav:"status"`
 	DateCreated string `json:"date_created" dynamodbav:"date_created"`
