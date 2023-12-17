@@ -30,18 +30,24 @@ export class TodoListAppStack extends Stack {
 
     // S3 Bucket for our Frontend
     // Instantiate Bucket with bucketName and versioned properties
-    const bucket = new Bucket(this, 'TodoListFrontEnd', {
-      bucketName: 'todo-list-app-dev',          // physical name of the bucket
+    const bucket = new Bucket(this, 'TodoListFrontEnd4', {
+      bucketName: 'todo-list-app-dev4',          // physical name of the bucket
       websiteIndexDocument: 'index.html',       // enable static web hosting
       websiteErrorDocument: 'error.html',       // error document (404.html)
       publicReadAccess: true,                   // public read access on the bucket
       removalPolicy: REMOVAL_POLICY,
       autoDeleteObjects: true,                  // allow these files to be removed along with the bucket
       encryption: BucketEncryption.S3_MANAGED,  // server-side encryption with a master key managed by S3
+      blockPublicAccess : {
+        blockPublicAcls: false,
+        blockPublicPolicy: false,
+        ignorePublicAcls: false,
+        restrictPublicBuckets: false
+      }
     });
 
     // Deploying S3 Bucket static web application
-    const webApplication = new BucketDeployment(this, 'WebTodoListApplication', {
+    const webApplication = new BucketDeployment(this, 'WebTodoListApplication4', {
       sources: [ Source.asset(`web_app/`) ],            // sources from which to deploy the contents of this bucket
       destinationBucket: bucket,                        // S3 bucket to sync the contents of the zip file to
     });
@@ -70,7 +76,7 @@ export class TodoListAppStack extends Stack {
     // Lambda Function
     const todoList = new lambda.Function(this, 'TodoListFunction', {
       runtime: Runtime.GO_1_X,                                      // runtime environment for the Lambda function that you are uploading
-      handler: 'todoList',                                          // name of the method within your code that Lambda calls to execute your function
+      handler: 'main',                                          // name of the method within your code that Lambda calls to execute your function
       code: lambda.Code.fromAsset('cmd/todoList'),                  // source code of your Lambda function; code loaded from "lambda" directory
       functionName: 'TodoListApplication',                          // name for the function
       description: 'Triggered when there is an API request',        // description of the function

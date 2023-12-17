@@ -5,7 +5,7 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-sdk-go/aws"
-	"github.com/Robson704/Projekttt/pkg/response"
+	"github.com/[username/repository-name]/pkg/response"
 )
 
 type Error struct {

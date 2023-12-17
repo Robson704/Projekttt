@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
-	"github.com/Robson704/Projekttt/pkg/service"
+	"github.com/[username/repository-name]/pkg/service"
 )
 
 var (

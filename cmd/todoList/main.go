@@ -6,8 +6,8 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/Robson704/Projekttt/pkg/api"
-	"github.com/Robson704/Projekttt/pkg/handlers"
+	"github.com/[username/repository-name]/pkg/api"
+	"github.com/[username/repository-name]/pkg/handlers"
 )
 
 // Entry point that runs your Lambda function code

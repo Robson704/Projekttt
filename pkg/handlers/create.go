@@ -7,11 +7,11 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-sdk-go/aws"
-	"github.com/Robson704/Projekttt/pkg/api"
-	"github.com/Robson704/Projekttt/pkg/logger"
-	"github.com/Robson704/Projekttt/pkg/models"
+	"github.com/[username/repository-name]/pkg/api"
+	"github.com/[username/repository-name]/pkg/logger"
+	"github.com/[username/repository-name]/pkg/models"
 
-	"github.com/Robson704/Projekttt/pkg/response"
+	"github.com/[username/repository-name]/pkg/response"
 )
 
 // CreateUser creates a new user account and save to dynamodb table.
