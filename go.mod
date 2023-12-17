@@ -1,4 +1,4 @@
-module github.com/[username/repository-name]
+module github.com/Robson704/Projekttt
 
 go 1.17
 

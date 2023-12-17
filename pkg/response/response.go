@@ -3,7 +3,7 @@ package response
 import (
 	"encoding/json"
 
-	"github.com/[username/repository-name]/pkg/logger"
+	"github.com/Robson704/Projekttt/pkg/logger"
 )
 
 const (
